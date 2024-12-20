@@ -80,7 +80,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       className="h-3 w-3 relative"
                       width={12}
                       height={12}
-                      alt=""
+                      alt="Chat"
                       src="/chatteardrop-1.svg"
                     />
                     <div className="flex-1 relative tracking-[0.5px] leading-[250%] uppercase font-semibold inline-block max-w-[calc(100%_-_20px)]">
@@ -115,7 +115,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       className="h-3 w-3 relative"
                       width={12}
                       height={12}
-                      alt=""
+                      alt="Tag"
                       src="/tag-1.svg"
                     />
                     <div className="flex-1 relative tracking-[0.5px] leading-[250%] uppercase font-semibold inline-block max-w-[calc(100%_-_20px)]">
@@ -126,7 +126,13 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                     12
                   </div>
                   <div className="self-stretch flex flex-row items-start justify-start gap-2 text-sm text-tomato mq450:flex-wrap">
-                    <Image className="flex flex-row items-start justify-start" />
+                    <Image 
+                      className="flex flex-row items-start justify-start"
+                      src="/trend-down.svg"
+                      alt="Trend Down"
+                      width={20}
+                      height={20}
+                    />
                     <div className="w-[317px] relative tracking-[-0.01em] leading-[157%] inline-block min-w-[71px]">
                       <span>15%</span>
                       <span className="text-text-secondary"> decrease</span>
@@ -141,7 +147,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       className="h-3 w-3 relative"
                       width={12}
                       height={12}
-                      alt=""
+                      alt="Check"
                       src="/checkfat.svg"
                     />
                     <div className="flex-1 relative tracking-[0.5px] leading-[250%] uppercase font-semibold inline-block max-w-[calc(100%_-_20px)]">{`CONVERSION `}</div>
@@ -150,7 +156,13 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                     50%
                   </div>
                   <div className="self-stretch flex flex-row items-start justify-start gap-2 text-sm text-tomato mq450:flex-wrap">
-                    <Image className="flex flex-row items-start justify-start" />
+                    <Image 
+                      className="flex flex-row items-start justify-start"
+                      src="/trend-down.svg"
+                      alt="Trend Down"
+                      width={20}
+                      height={20}
+                    />
                     <div className="w-[317px] relative tracking-[-0.01em] leading-[157%] inline-block min-w-[71px]">
                       <span>15%</span>
                       <span className="text-text-secondary"> decrease</span>
@@ -165,7 +177,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       className="h-3 w-3 relative"
                       width={12}
                       height={12}
-                      alt=""
+                      alt="Coins"
                       src="/coins.svg"
                     />
                     <div className="flex-1 relative tracking-[0.5px] leading-[250%] uppercase font-semibold inline-block max-w-[calc(100%_-_20px)]">
@@ -200,7 +212,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       className="h-3 w-3 relative"
                       width={12}
                       height={12}
-                      alt=""
+                      alt="Coin"
                       src="/coin.svg"
                     />
                     <div className="flex-1 relative tracking-[0.5px] leading-[250%] uppercase font-semibold inline-block max-w-[calc(100%_-_20px)]">
@@ -211,8 +223,14 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                     $240
                   </div>
                   <div className="self-stretch flex flex-row items-start justify-start gap-2 text-sm text-success-main mq450:flex-wrap">
-                    <Image className="flex flex-row items-start justify-start" />
-                    <div className="w-[317px] relative tracking-[-0.01em] leading-[157%] inline-block min-w-[66px]">
+                    <Image 
+                      className="flex flex-row items-start justify-start"
+                      src="/trend-up.svg"
+                      alt="Trend Up"
+                      width={20}
+                      height={20}
+                    />
+                    <div className="w-[317px] relative tracking-[-0.01em] leading-[157%] inline-block min-w-[71px]">
                       <span>15%</span>
                       <span className="text-text-secondary"> increase</span>
                     </div>
@@ -226,7 +244,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       className="h-3 w-3 relative"
                       width={12}
                       height={12}
-                      alt=""
+                      alt="Piggybank"
                       src="/piggybank.svg"
                     />
                     <div className="flex-1 relative tracking-[0.5px] leading-[250%] uppercase font-semibold inline-block max-w-[calc(100%_-_20px)]">
@@ -237,8 +255,14 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                     $240
                   </div>
                   <div className="self-stretch flex flex-row items-start justify-start gap-2 text-sm text-success-main mq450:flex-wrap">
-                    <Image className="flex flex-row items-start justify-start" />
-                    <div className="w-[317px] relative tracking-[-0.01em] leading-[157%] inline-block min-w-[66px]">
+                    <Image 
+                      className="flex flex-row items-start justify-start"
+                      src="/trend-up.svg"
+                      alt="Trend Up"
+                      width={20}
+                      height={20}
+                    />
+                    <div className="w-[317px] relative tracking-[-0.01em] leading-[157%] inline-block min-w-[71px]">
                       <span>15%</span>
                       <span className="text-text-secondary"> increase</span>
                     </div>
@@ -270,7 +294,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                         className="w-3 h-3 relative"
                         width={12}
                         height={12}
-                        alt=""
+                        alt="Chat"
                         src="/chatteardrop-1.svg"
                       />
                     </div>
@@ -311,14 +335,14 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                           </div>
                           <div className="h-[250px] flex-1 relative min-w-[348px] max-w-full mq750:h-auto mq750:min-h-[250] mq750:min-w-full">
                             <YAxis label={false} />
-                            <div className="absolute top-[0px] left-[0px] w-[519px] h-[230px] max-w-full z-[1] mq750:h-auto mq750:min-h-[230]">
+                            <div className="absolute top-[0px] left-[0px] w-[519px] h-[230px] max-w-full z-[1] mq750:h-auto mq750:min-h-[230] mq750:min-w-full">
                               <div className="absolute top-[2px] left-[27.5px] w-[465px] overflow-hidden flex flex-row items-end justify-between pt-[35px] px-0 pb-0 box-border gap-5 max-w-full mq750:flex-wrap mq750:justify-center">
                                 <Image
                                   className="h-[84px] w-8 relative"
                                   loading="lazy"
                                   width={32}
                                   height={84}
-                                  alt=""
+                                  alt="Chart Bar"
                                   src="/-chartbar.svg"
                                 />
                                 <Image
@@ -326,7 +350,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                   loading="lazy"
                                   width={32}
                                   height={84}
-                                  alt=""
+                                  alt="Chart Bar"
                                   src="/-chartbar-1.svg"
                                 />
                                 <Image
@@ -334,7 +358,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                   loading="lazy"
                                   width={32}
                                   height={104}
-                                  alt=""
+                                  alt="Chart Bar"
                                   src="/-chartbar-2.svg"
                                 />
                                 <Image
@@ -342,7 +366,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                   loading="lazy"
                                   width={32}
                                   height={205}
-                                  alt=""
+                                  alt="Chart Bar"
                                   src="/-chartbar-3.svg"
                                 />
                                 <Image
@@ -350,7 +374,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                   loading="lazy"
                                   width={32}
                                   height={100}
-                                  alt=""
+                                  alt="Chart Bar"
                                   src="/-chartbar-4.svg"
                                 />
                                 <Image
@@ -358,7 +382,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                   loading="lazy"
                                   width={32}
                                   height={122}
-                                  alt=""
+                                  alt="Chart Bar"
                                   src="/-chartbar-5.svg"
                                 />
                                 <Image
@@ -366,7 +390,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                   loading="lazy"
                                   width={32}
                                   height={122}
-                                  alt=""
+                                  alt="Chart Bar"
                                   src="/-chartbar-6.svg"
                                 />
                               </div>
@@ -375,14 +399,14 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                   className="absolute top-[0px] left-[0px] w-full h-full z-[1]"
                                   width={519}
                                   height={200}
-                                  alt=""
+                                  alt="Slider"
                                   src="/slider.svg"
                                 />
                                 <Image
                                   className="absolute top-[53.1px] left-[0px] w-[519px] h-[85.9px] z-[2]"
                                   width={519}
                                   height={86}
-                                  alt=""
+                                  alt="Slider"
                                   src="/slider-1.svg"
                                 />
                               </div>
@@ -445,7 +469,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                           className="w-3 h-3 relative"
                           width={12}
                           height={12}
-                          alt=""
+                          alt="Chart Bar"
                           src="/chartbar.svg"
                         />
                       </div>
@@ -507,7 +531,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                 loading="lazy"
                                 width={32}
                                 height={254}
-                                alt=""
+                                alt="Chart Bar"
                                 src="/-chartbar-7.svg"
                               />
                               <Image
@@ -515,7 +539,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                 loading="lazy"
                                 width={32}
                                 height={220}
-                                alt=""
+                                alt="Chart Bar"
                                 src="/-chartbar-8.svg"
                               />
                             </div>
@@ -525,7 +549,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                 loading="lazy"
                                 width={32}
                                 height={212}
-                                alt=""
+                                alt="Chart Bar"
                                 src="/-chartbar-9.svg"
                               />
                               <Image
@@ -533,7 +557,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                                 loading="lazy"
                                 width={32}
                                 height={194}
-                                alt=""
+                                alt="Chart Bar"
                                 src="/-chartbar-10.svg"
                               />
                             </div>
@@ -569,7 +593,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                         className="h-3 w-3 relative"
                         width={12}
                         height={12}
-                        alt=""
+                        alt="Chat"
                         src="/chatteardrop-3.svg"
                       />
                       <div className="flex-1 relative tracking-[0.5px] leading-[250%] uppercase font-semibold inline-block min-w-[60px]">
@@ -581,7 +605,7 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                     className="w-[793.9px] h-[793.9px] absolute !m-[0] top-[-359px] left-[-360px] object-contain z-[1]"
                     width={794}
                     height={794}
-                    alt=""
+                    alt="Pulse"
                     src="/pulsesvg@2x.png"
                   />
                   <InputForm
@@ -797,7 +821,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       <div className="flex-1 flex flex-col items-start justify-start">
                         <CustomTableCustomCell
                           type="Avatar + Text"
-                          customTableCustomCellAlignSelf="stretch"
+                          text="Product Name"
+                          image="/default-icon.svg"
                         />
                         <div className="hidden flex-col items-start justify-start">
                           <div className="w-[77px] h-[22px] relative leading-[157%] inline-block">
@@ -810,7 +835,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       <div className="flex-1 flex flex-col items-start justify-start">
                         <CustomTableCustomCell
                           type="Avatar + Text"
-                          customTableCustomCellAlignSelf="stretch"
+                          text="Product Name"
+                          image="/default-icon.svg"
                         />
                         <div className="hidden flex-col items-start justify-start">
                           <div className="w-[77px] h-[22px] relative leading-[157%] inline-block">
@@ -865,7 +891,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                           className="h-[18px] w-[18px] relative"
                           width={18}
                           height={18}
-                          alt=""
+                          alt="View Chat"
+                          src="/view-chat.svg"
                         />
                       </div>
                     </div>
@@ -876,7 +903,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       <div className="flex-1 flex flex-col items-start justify-start">
                         <CustomTableCustomCell
                           type="Avatar + Text"
-                          customTableCustomCellAlignSelf="stretch"
+                          text="Product Name"
+                          image="/default-icon.svg"
                         />
                         <div className="hidden flex-col items-start justify-start">
                           <div className="w-[77px] h-[22px] relative leading-[157%] inline-block">
@@ -889,7 +917,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       <div className="flex-1 flex flex-col items-start justify-start">
                         <CustomTableCustomCell
                           type="Avatar + Text"
-                          customTableCustomCellAlignSelf="stretch"
+                          text="Product Name"
+                          image="/default-icon.svg"
                         />
                         <div className="hidden flex-col items-start justify-start">
                           <div className="w-[77px] h-[22px] relative leading-[157%] inline-block">
@@ -944,7 +973,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                           className="h-[18px] w-[18px] relative"
                           width={18}
                           height={18}
-                          alt=""
+                          alt="View Chat"
+                          src="/view-chat.svg"
                         />
                       </div>
                     </div>
@@ -955,7 +985,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       <div className="flex-1 flex flex-col items-start justify-start">
                         <CustomTableCustomCell
                           type="Avatar + Text"
-                          customTableCustomCellAlignSelf="stretch"
+                          text="Product Name"
+                          image="/default-icon.svg"
                         />
                         <div className="hidden flex-col items-start justify-start">
                           <div className="w-[77px] h-[22px] relative leading-[157%] inline-block">
@@ -968,7 +999,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                       <div className="flex-1 flex flex-col items-start justify-start">
                         <CustomTableCustomCell
                           type="Avatar + Text"
-                          customTableCustomCellAlignSelf="stretch"
+                          text="Product Name"
+                          image="/default-icon.svg"
                         />
                         <div className="hidden flex-col items-start justify-start">
                           <div className="w-[77px] h-[22px] relative leading-[157%] inline-block">
@@ -1023,7 +1055,8 @@ const WingmanStoreSampleDashboa: NextPage = () => {
                           className="h-[18px] w-[18px] relative"
                           width={18}
                           height={18}
-                          alt=""
+                          alt="View Chat"
+                          src="/view-chat.svg"
                         />
                       </div>
                     </div>

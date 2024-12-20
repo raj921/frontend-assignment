@@ -1,43 +1,55 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
-import Avatar from "./avatar";
+import Image from "next/image";
 
 export type CustomTableCustomCellType = {
   className?: string;
-
-  /** Variant props */
   type?: string;
-
-  /** Style props */
-  customTableCustomCellAlignSelf?: CSSProperties["alignSelf"];
+  text?: string;
+  image?: string;
+  customTableCustomCellPosition?: CSSProperties["position"];
+  customTableCustomCellTop?: CSSProperties["top"];
+  customTableCustomCellLeft?: CSSProperties["left"];
+  customTableCustomCellWidth?: CSSProperties["width"];
 };
 
 const CustomTableCustomCell: NextPage<CustomTableCustomCellType> = ({
   className = "",
-  type = "Chips",
-  customTableCustomCellAlignSelf,
+  type = "Avatar + Text",
+  text = "",
+  image = "/default-icon.svg",
+  customTableCustomCellPosition,
+  customTableCustomCellTop,
+  customTableCustomCellLeft,
+  customTableCustomCellWidth,
 }) => {
   const customTableCustomCellStyle: CSSProperties = useMemo(() => {
     return {
-      alignSelf: customTableCustomCellAlignSelf,
+      position: customTableCustomCellPosition,
+      top: customTableCustomCellTop,
+      left: customTableCustomCellLeft,
+      width: customTableCustomCellWidth,
     };
-  }, [customTableCustomCellAlignSelf]);
+  }, [
+    customTableCustomCellPosition,
+    customTableCustomCellTop,
+    customTableCustomCellLeft,
+    customTableCustomCellWidth,
+  ]);
 
   return (
     <div
-      className={`w-full flex flex-row items-center justify-start gap-4 text-left text-base text-text-primary font-typography-caption1 ${className}`}
-      data-type={type}
+      className={`flex flex-row items-center justify-start gap-3 text-left text-sm text-text-primary font-typography-body-2 ${className}`}
       style={customTableCustomCellStyle}
     >
-      <Avatar content="Image" size="40px*" variant="Rounded" badge={false} />
-      <div className="flex-1 flex flex-col items-start justify-start">
-        <div className="w-[75px] relative tracking-[-0.01em] leading-[150%] flex items-center overflow-hidden text-ellipsis whitespace-nowrap">
-          Product Name goes here
-        </div>
-        <div className="relative text-sm leading-[157%] font-typography-body-2 text-text-secondary hidden">
-          Description
-        </div>
-      </div>
+      <Image
+        className="h-8 w-8 relative rounded-lg object-cover"
+        width={32}
+        height={32}
+        alt="Avatar"
+        src={image}
+      />
+      <div className="relative tracking-[-0.01em] leading-[157%]">{text}</div>
     </div>
   );
 };

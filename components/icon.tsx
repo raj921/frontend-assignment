@@ -4,17 +4,13 @@ import Image from "next/image";
 
 export type IconType = {
   className?: string;
+  size?: string;
   showIcon?: boolean;
-  muiStarFilled: string;
-
-  /** Variant props */
-  size?: "Medium*" | "Small";
-
-  /** Style props */
   iconMargin?: CSSProperties["margin"];
   iconPosition?: CSSProperties["position"];
   iconTop?: CSSProperties["top"];
   iconRight?: CSSProperties["right"];
+  muiStarFilled?: string;
   muiStarFilledIconOverflow?: CSSProperties["overflow"];
 };
 
@@ -26,7 +22,7 @@ const Icon: NextPage<IconType> = ({
   iconPosition,
   iconTop,
   iconRight,
-  muiStarFilled,
+  muiStarFilled = "/star.svg",
   muiStarFilledIconOverflow,
 }) => {
   const iconStyle: CSSProperties = useMemo(() => {
@@ -35,32 +31,28 @@ const Icon: NextPage<IconType> = ({
       position: iconPosition,
       top: iconTop,
       right: iconRight,
-    };
-  }, [iconMargin, iconPosition, iconTop, iconRight]);
-
-  const muiStarFilledIconStyle: CSSProperties = useMemo(() => {
-    return {
       overflow: muiStarFilledIconOverflow,
     };
-  }, [muiStarFilledIconOverflow]);
+  }, [iconMargin, iconPosition, iconTop, iconRight, muiStarFilledIconOverflow]);
+
+  if (!showIcon) {
+    return null;
+  }
 
   return (
-    showIcon && (
-      <div
-        className={`flex flex-row items-start justify-start [&_.muistarfilled-icon]:data-[size='Small']:h-5 [&_.muistarfilled-icon]:data-[size='Small']:w-5 ${className}`}
-        data-size={size}
+    <div
+      className={`flex flex-row items-start justify-start ${className}`}
+      data-size={size}
+    >
+      <Image
+        className="w-5 relative h-5 overflow-hidden shrink-0"
+        width={20}
+        height={20}
+        alt="Icon"
+        src={muiStarFilled}
         style={iconStyle}
-      >
-        <Image
-          className="muistarfilled-icon h-6 w-6 relative overflow-hidden shrink-0"
-          width={24}
-          height={24}
-          alt=""
-          src={muiStarFilled}
-          style={muiStarFilledIconStyle}
-        />
-      </div>
-    )
+      />
+    </div>
   );
 };
 

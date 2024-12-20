@@ -29,15 +29,15 @@ const TableHead: NextPage<TableHeadType> = ({
   small = false,
   leftSort = false,
   rightSort = false,
-  showTableHead,
+  showTableHead = true,
   tableHeadFlex,
   tableHeadHeight,
   tableHeadJustifyContent = "flex-start",
   tableHeadWidth,
-  muiArrowDownwardFilled,
+  muiArrowDownwardFilled = "/arrow-down.svg",
   head,
-  showHead,
-  muiArrowDownwardFilled1,
+  showHead = true,
+  muiArrowDownwardFilled1 = "/arrow-down.svg",
 }) => {
   const tableHeadStyle: CSSProperties = useMemo(() => {
     return {
@@ -48,39 +48,41 @@ const TableHead: NextPage<TableHeadType> = ({
     };
   }, [tableHeadFlex, tableHeadHeight, tableHeadJustifyContent, tableHeadWidth]);
 
+  if (!showTableHead) {
+    return null;
+  }
+
   return (
-    showTableHead && (
-      <div
-        className={`flex-1 bg-helpers-clickable-empty-areas h-[46px] flex flex-row items-center justify-start p-4 box-border z-[4] text-left text-sm text-text-secondary font-typography-body-2 ${className}`}
-        style={tableHeadStyle}
-      >
-        {leftSort && (
-          <div className="flex flex-row items-start justify-start py-0 px-1">
-            <Image
-              className="h-[18px] w-[18px] relative overflow-hidden shrink-0"
-              width={18}
-              height={18}
-              alt=""
-              src={muiArrowDownwardFilled}
-            />
-          </div>
-        )}
-        {showHead && (
-          <div className="relative leading-[100%] font-medium">{head}</div>
-        )}
-        {rightSort && (
-          <div className="flex flex-row items-start justify-start py-0 px-1">
-            <Image
-              className="h-[18px] w-[18px] relative overflow-hidden shrink-0"
-              width={18}
-              height={18}
-              alt=""
-              src={muiArrowDownwardFilled1}
-            />
-          </div>
-        )}
-      </div>
-    )
+    <div
+      className={`flex-1 bg-helpers-clickable-empty-areas h-[46px] flex flex-row items-center justify-start p-4 box-border z-[4] text-left text-sm text-text-secondary font-typography-body-2 ${className}`}
+      style={tableHeadStyle}
+    >
+      {leftSort && (
+        <div className="flex flex-row items-start justify-start py-0 px-1">
+          <Image
+            className="h-[18px] w-[18px] relative overflow-hidden shrink-0"
+            width={18}
+            height={18}
+            alt="Sort"
+            src={muiArrowDownwardFilled}
+          />
+        </div>
+      )}
+      {showHead && (
+        <div className="relative leading-[100%] font-medium">{head}</div>
+      )}
+      {rightSort && (
+        <div className="flex flex-row items-start justify-start py-0 px-1">
+          <Image
+            className="h-[18px] w-[18px] relative overflow-hidden shrink-0"
+            width={18}
+            height={18}
+            alt="Sort"
+            src={muiArrowDownwardFilled1}
+          />
+        </div>
+      )}
+    </div>
   );
 };
 

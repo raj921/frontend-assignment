@@ -4,26 +4,22 @@ import Image from "next/image";
 
 export type YAxisLineType = {
   className?: string;
-  showLabelFalse?: boolean;
-  textInputContainer: string;
-
-  /** Variant props */
   label?: boolean;
-
-  /** Style props */
+  showLabelFalse?: boolean;
   labelFalseHeight?: CSSProperties["height"];
   labelFalseAlignSelf?: CSSProperties["alignSelf"];
   labelFalseWidth?: CSSProperties["width"];
+  textInputContainer?: string;
 };
 
 const YAxisLine: NextPage<YAxisLineType> = ({
   className = "",
   label = true,
-  showLabelFalse,
+  showLabelFalse = true,
   labelFalseHeight,
   labelFalseAlignSelf,
   labelFalseWidth,
-  textInputContainer,
+  textInputContainer = "/text-input-container.svg",
 }) => {
   const labelFalseStyle: CSSProperties = useMemo(() => {
     return {
@@ -33,23 +29,26 @@ const YAxisLine: NextPage<YAxisLineType> = ({
     };
   }, [labelFalseHeight, labelFalseAlignSelf, labelFalseWidth]);
 
+  if (!showLabelFalse) {
+    return null;
+  }
+
   return (
-    showLabelFalse && (
-      <div
-        className={`self-stretch h-[22px] flex flex-row items-center justify-start ${className}`}
-        data-label={label}
+    <div
+      className={`flex flex-col items-start justify-start py-0 pr-2 pl-0 gap-[7px] ${className}`}
+    >
+      {label && (
+        <div className="relative leading-[150%] inline-block">Label</div>
+      )}
+      <Image
+        className="w-[30px] relative max-w-full overflow-hidden h-[30px] shrink-0"
+        width={30}
+        height={30}
+        alt="Line"
+        src={textInputContainer}
         style={labelFalseStyle}
-      >
-        <Image
-          className="h-px flex-1 relative max-w-full overflow-hidden"
-          loading="lazy"
-          width={519}
-          height={1}
-          alt=""
-          src={textInputContainer}
-        />
-      </div>
-    )
+      />
+    </div>
   );
 };
 

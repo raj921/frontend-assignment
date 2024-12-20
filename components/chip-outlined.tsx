@@ -61,7 +61,8 @@ const ChipOutlined: NextPage<ChipOutlinedType> = ({
             className="w-4 relative h-4"
             width={16}
             height={16}
-            alt=""
+            alt="Delete"
+            src="/close.svg"
             style={muiCancelFilledIconStyle}
           />
         )}

@@ -35,10 +35,11 @@ const Link: NextPage<LinkType> = ({
         Link
       </div>
       <Image
-        className="w-[30px] relative max-w-full overflow-hidden h-0 shrink-0 hidden"
+        className="w-[30px] relative max-w-full overflow-hidden h-5 shrink-0 hidden"
         width={30}
-        height
-        alt=""
+        height={20}
+        alt="Link Icon"
+        src="/link-icon.svg"
       />
     </div>
   );

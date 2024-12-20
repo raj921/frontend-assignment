@@ -36,18 +36,31 @@ const Breadcrumbs: NextPage<BreadcrumbsType> = ({
       <BreadcrumbLink active={false} icon />
       <div className="w-[23px] flex flex-col items-center justify-start">
         <div className="w-[7px] h-6 relative leading-[150%] inline-block shrink-0">
-          /
+          <Image
+            className="w-8 relative rounded-lg h-4 overflow-hidden shrink-0"
+            width={32}
+            height={16}
+            alt="Divider"
+            src="/divider.svg"
+          />
         </div>
       </div>
       <Image
         className="w-8 relative rounded-lg h-4 overflow-hidden shrink-0"
         width={32}
         height={16}
-        alt=""
+        alt="Icon"
+        src="/icon.svg"
       />
       <div className="w-[23px] flex flex-col items-center justify-start">
         <div className="w-[7px] h-6 relative leading-[150%] inline-block shrink-0">
-          /
+          <Image
+            className="w-8 relative rounded-lg h-4 overflow-hidden shrink-0"
+            width={32}
+            height={16}
+            alt="Divider"
+            src="/divider.svg"
+          />
         </div>
       </div>
       <BreadcrumbLink active icon />
